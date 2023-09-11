@@ -17,7 +17,7 @@ function App() {
     const results = event.results
     console.log(results)
     const frase = results[results.length - 1][0].transcript
-    if (frase == frases[count] && count < frases.length) {
+    if (frase == frases[count] && count < frases.length-1) {
       setCount(count + 1)
     } else {
       alert('fin ' + count)
